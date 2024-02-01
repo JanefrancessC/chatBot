@@ -1,4 +1,4 @@
 {
     "extends";"js,json",
-    "watch"; ["index.js", ".env"]
+    "watch"; ["index.js"]
 }

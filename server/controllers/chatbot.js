@@ -1,11 +1,9 @@
 import { sendSMS } from "./sendSMS.js";
 import { convertCSVToJSON } from "./csvToJsonConverter.js";
-import path from "path";
 
 export const chatbot = async (req, res) => {
  try {
      const data = await convertCSVToJSON();
-     console.log("data: " + data);
 
      // iterate through the data and send SMS to each lead
      for (const lead of Object.values(data)) {

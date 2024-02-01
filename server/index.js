@@ -5,13 +5,12 @@ import apiRouter from "./api.js";
 
 
 const app = express();
-const port = 3000;
+const port = 3100;
 
 app.use(express.json());
 app.use(bodyParser.json());
 
 app.use("/api", apiRouter);
-
 const startServer = async () => {
   app
     .listen(port, () => console.log(`Listening on port ${port}`))
